@@ -21,7 +21,7 @@ The analysis integrates several techniques, including:
 
 The core analysis is implemented in the Jupyter notebook `Truthseeker23.ipynb`.  
 
-**Note:** To run this notebook, the Truthseeker23 dataset is required. The dataset must be cleaned and preprocessed as outlined in the notebook before executing the analysis cells.
+**Note:** To run this notebook, the Truthseeker23 dataset is required. The dataset must be cleaned and preprocessed as outlined in the notebook before executing the script.
 
 ## Dataset Credit
 
