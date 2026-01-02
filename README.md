@@ -1,21 +1,32 @@
 # Disinformation Dynamics on Twitter (X)
 
-This project analyzes how disinformation spreads on the social media platform X (formerly Twitter) using the Truthseeker23 dataset. It includes over 134,000 tweets and 21,000 retweet interactions, with nearly half labeled as false information.
+This project investigates the structural and temporal mechanisms of disinformation propagation on the social platform X (formerly Twitter). Leveraging the Truthseeker23 dataset (134k+ tweets, 8.8M+ projected edges), this research quantifies how emotional valence and network topology accelerate the spread of false information.
+
+## Summary
+
+Propagation Speed: Disinformation spreads nearly twice as fast as real news, with a mean retweet rate of 0.0083 vs 0.0044 retweets per day.
+Echo Chambers: The study confirmed a high "modularity" (0.833), meaning disinformation is almost entirely contained within isolated, tightly-knit communities, rarely crossing over into broader network clusters.
+Influence Gap: Fake tweets are significantly more "central" to their networks, exhibiting a 60% higher connectivity rate than real tweets, suggesting they leverage key influential hubs to gain traction.
+Emotional Drivers: Negative sentiment (found in 54% of fake tweets) was identified as a primary catalyst for network amplification and increased virality.
 
 ## Project Overview
 
-Using **NetworkX** for social network analysis and **VADER** for sentiment analysis, this study uncovers how false information propagates faster within tightly connected communities, amplified by influential users and negative sentiment.
+### 1. Network Structure & Community Detection
 
-The analysis explores graph structures, sentiment impact, and the speed of disinformation spread through the network.
+I constructed a model representing the interactions between authors and tweets to map the flow of information. Using the Louvain algorithm, I partitioned the network into over 113,000 distinct communities to measure how "insular" disinformation clusters are compared to the rest of the network.
 
-The analysis integrates several techniques, including:
+### 2. Influence & Centrality Modeling
 
-- Construction and visualization of retweet interaction graphs  
-- Calculation of centrality measures (degree, betweenness, eigenvector) to identify influential nodes  
-- Community detection and modularity analysis to understand cluster-based propagation  
-- Sentiment scoring of tweets using VADER to assess emotional tone and its impact on spread  
-- Temporal analysis of tweet and retweet timestamps to compare diffusion speed of false vs. true information  
-- Logistic regression modeling to explore relationships between network metrics, sentiment, and likelihood of disinformation spread
+I applied multiple metrics to identify the "super-spreaders" of the network:
+
+Degree Centrality: To measure immediate reach.
+K-Clique Analysis: To identify the core "inner circles" where disinformation is most dense.
+Bipartite Projection: To connect tweets based on shared authorship, revealing how specific actors dominate certain narratives.
+
+### 3. Sentiment & Temporal Analysis
+
+Linguistic Scoring: Used VADER to quantify the emotional tone of 134k+ tweets, correlating negative sentiment with higher retweet rates.
+Velocity Calculations: Created a custom metric to track the speed of spread relative to the time of posting, allowing for a direct comparison of "virality decay" between real and fake information.
 
 ## Usage
 
