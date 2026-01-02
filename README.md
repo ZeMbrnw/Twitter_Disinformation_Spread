@@ -4,10 +4,10 @@ This project investigates the structural and temporal mechanisms of disinformati
 
 ## Summary
 
-Propagation Speed: Disinformation spreads nearly twice as fast as real news, with a mean retweet rate of 0.0083 vs 0.0044 retweets per day.
-Echo Chambers: The study confirmed a high "modularity" (0.833), meaning disinformation is almost entirely contained within isolated, tightly-knit communities, rarely crossing over into broader network clusters.
-Influence Gap: Fake tweets are significantly more "central" to their networks, exhibiting a 60% higher connectivity rate than real tweets, suggesting they leverage key influential hubs to gain traction.
-Emotional Drivers: Negative sentiment (found in 54% of fake tweets) was identified as a primary catalyst for network amplification and increased virality.
+- Propagation Speed: Disinformation spreads nearly twice as fast as real news, with a mean retweet rate of 0.0083 vs 0.0044 retweets per day.
+- Echo Chambers: The study confirmed a high "modularity" (0.833), meaning disinformation is almost entirely contained within isolated, tightly-knit communities, rarely crossing over into broader network clusters.
+- Influence Gap: Fake tweets are significantly more "central" to their networks, exhibiting a 60% higher connectivity rate than real tweets, suggesting they leverage key influential hubs to gain traction.
+- Emotional Drivers: Negative sentiment (found in 54% of fake tweets) was identified as a primary catalyst for network amplification and increased virality.
 
 ## Project Overview
 
