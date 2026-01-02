@@ -19,14 +19,14 @@ I constructed a model representing the interactions between authors and tweets t
 
 I applied multiple metrics to identify the "super-spreaders" of the network:
 
-Degree Centrality: To measure immediate reach.
-K-Clique Analysis: To identify the core "inner circles" where disinformation is most dense.
-Bipartite Projection: To connect tweets based on shared authorship, revealing how specific actors dominate certain narratives.
+- Degree Centrality: To measure immediate reach.
+- K-Clique Analysis: To identify the core "inner circles" where disinformation is most dense.
+- Bipartite Projection: To connect tweets based on shared authorship, revealing how specific actors dominate certain narratives.
 
 ### 3. Sentiment & Temporal Analysis
 
-Linguistic Scoring: Used VADER to quantify the emotional tone of 134k+ tweets, correlating negative sentiment with higher retweet rates.
-Velocity Calculations: Created a custom metric to track the speed of spread relative to the time of posting, allowing for a direct comparison of "virality decay" between real and fake information.
+- Linguistic Scoring: Used VADER to quantify the emotional tone of 134k+ tweets, correlating negative sentiment with higher retweet rates.
+- Velocity Calculations: Created a custom metric to track the speed of spread relative to the time of posting, allowing for a direct comparison of "virality decay" between real and fake information.
 
 ## Usage
 
